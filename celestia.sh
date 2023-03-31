@@ -59,7 +59,8 @@ LimitNOFILE=4096
 WantedBy=multi-user.target
 EOF
 
-echo "Please backup mnemonic"
+echo ""
+echo -e "\e[32mPlease backup mnemonic\e[0m"
 echo ""
 echo "Node logs: journalctl -u celestia-lightd -f"
 echo ""
