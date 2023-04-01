@@ -21,6 +21,7 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
   + Now view the node's logs with the `journalctl -u celestia-lightd -f` command.
 
 ### 2. Upgrade node - Upgrade Celestia-node to the most recent version.
+  +
 
 ### 3. Remove node - Remove the Celestia-node.
   + Make sure to backup the `.celestia-light-blockspacerace-0/keys` folder before running this command.
