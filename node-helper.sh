@@ -4,7 +4,7 @@ echo ""
 echo "Welcome to Celestia light node helper"
 echo "1. Install node | 4. Check node ID"
 echo "2. Upgrade node | 5. Run PayForBlob transactions"
-echo "3. Remove node  | "
+echo "3. Remove  node | 6. Returns the header"
 echo ""
 
 read -p "Select an option 1~5: " choice
@@ -73,7 +73,8 @@ case $choice in
     sudo /bin/bash blob.sh
     ;;
   6)  
-    echo "6"
+    read -p "Enter the block height: " height
+    curl -X GET "http://localhost:26659/header/$height" | jq .
     ;;
   *)
     echo "Invalid option. Please select 1~6."
