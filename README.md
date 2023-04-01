@@ -19,7 +19,6 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
   + `sudo systemctl enable celestia-lightd`
   + `sudo systemctl start celestia-lightd`
   + Now view the node's logs with the `journalctl -u celestia-lightd -f` command.
-<br/>
 
 ### 2. Upgrade node - Upgrade Celestia-node to the most recent version.
 <br/>
