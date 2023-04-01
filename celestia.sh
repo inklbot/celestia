@@ -22,11 +22,15 @@ go_install() {
 }
 
 celestia_node_install () {
+
+    LATEST_RELEASE=$(curl -s https://api.github.com/repos/celestiaorg/celestia-node/releases/latest | jq -r '.tag_name')
+    echo "The latest Celestia Node release is: $LATEST_RELEASE"
+
     cd $HOME 
     rm -rf celestia-node 
     git clone https://github.com/celestiaorg/celestia-node.git 
     cd celestia-node/ 
-    git checkout tags/v0.8.0 
+    git checkout $LATEST_RELEASE
     make build 
     make install 
     make cel-key 
