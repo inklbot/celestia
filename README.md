@@ -35,4 +35,4 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
 ### 6. Returns the header
   + Fetch the header at the desired height.
 
-![image](https://user-images.githubusercontent.com/31788091/229275649-71c867de-ff02-4d64-86b0-216351275ab1.png)
+
