@@ -25,7 +25,7 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
 <br/>
 
 ### 3. Remove node - Remove the Celestia-node.
-  + Before executing this command, you must create a `.celestia-light-blockspacerace-0/keys` folder before running this command.
+  + Make sure to backup the `.celestia-light-blockspacerace-0/keys` folder before running this command.
 <br/> 
 
 ### 4. Check node ID - Provides the Celestia node ID of the current server.
