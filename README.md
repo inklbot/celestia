@@ -10,7 +10,6 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
 ```
 
 <img width="80%" src="https://user-images.githubusercontent.com/31788091/229257921-9f979426-7adf-44b7-999b-d068a446bc5d.png"/>
-<br/>
 
 # Node-helper options
 
