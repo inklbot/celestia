@@ -12,8 +12,13 @@ read -p "Select an option 1~5: " choice
 case $choice in
   1)
     echo "Installing node..."
+    if [ -f celestia.sh ]; then
+      sudo rm celestia.sh
+    fi    
     wget https://raw.githubusercontent.com/inklbot/celestia/main/celestia.sh 
-    sed -i 's/\r//' celestia.sh && chmod +x celestia.sh && sudo /bin/bash celestia.sh
+    sed -i 's/\r//' celestia.sh
+    chmod +x celestia.sh
+    sudo /bin/bash celestia.sh    
     ;;
   2)
     echo "Upgrading node..."
@@ -58,8 +63,14 @@ case $choice in
     ;;
   5)
     echo "Run PayForBlob transactions..."
+    if [ -f blob.sh ]; then
+      sudo rm blob.sh
+    fi
+
     wget https://raw.githubusercontent.com/inklbot/celestia-itn/main/blob.sh
-    sed -i 's/\r//' blob.sh && chmod +x blob.sh && sudo /bin/bash blob.sh
+    sed -i 's/\r//' blob.sh
+    chmod +x blob.sh
+    sudo /bin/bash blob.sh
     ;;
   6)  
     echo "6"
