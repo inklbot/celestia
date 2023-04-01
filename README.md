@@ -21,17 +21,17 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
   + Now view the node's logs with the `journalctl -u celestia-lightd -f` command.
 <br/>
 
-## 2. Upgrade node - Upgrade Celestia-node to the most recent version.
+### 2. Upgrade node - Upgrade Celestia-node to the most recent version.
 <br/>
 
-## 3. Remove node - Remove the Celestia-node.
+### 3. Remove node - Remove the Celestia-node.
 <br/>
 
-## 4. Check node ID - Provides the Celestia node ID of the current server.
+### 4. Check node ID - Provides the Celestia node ID of the current server.
   + To use this command, you must have the `curl` package installed; if not, you can install it with the `apt install curl` command.
 <br/>
 
-## 5. Run PayForBlob transactions - Run a PayForBlob transaction on the Celestia-node on the current server.
+### 5. Run PayForBlob transactions - Run a PayForBlob transaction on the Celestia-node on the current server.
   + To use this command, you must have the `curl` package installed; if not, you can install it with the `apt install curl` command.
   + You must have TIA tokens in your Celestia wallet.
 <br/>
