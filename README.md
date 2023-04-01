@@ -18,5 +18,5 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
   + After the installation is complete, be sure to back up your mnemonic and run the 
   + `sudo systemctl enable celestia-lightd`
   + `sudo systemctl start celestia-lightd`
-  + Enter additional commands to run the node.
+  + Now view the node's logs with the `journalctl -u celestia-lightd -f` command.
 <br/>
