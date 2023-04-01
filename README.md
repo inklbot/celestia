@@ -28,6 +28,9 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
 ### 4. Check node ID - Provides the Celestia node ID of the current server.
   + To use this command, you must have the `curl` package installed; if not, you can install it with the `apt install curl` command.
 
-### 5. Run PayForBlob transactions - Run a PayForBlob transaction on the Celestia-node on the current server.
+### 5. Run PayForBlob Tx - Run a PayForBlob Tx on the Celestia-node.
   + To use this command, you must have the `curl` package installed; if not, you can install it with the `apt install curl` command.
   + You must have TIA tokens in your Celestia wallet.
+  
+### 6. Returns the header
+  + Fetch the header at the desired height.
