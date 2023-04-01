@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
 <img width="80%" src="https://user-images.githubusercontent.com/31788091/229257921-9f979426-7adf-44b7-999b-d068a446bc5d.png"/>
 <br/>
 
-# Options
+# Node-helper options
 
 1. Install node - Install the Celestia `light` node.
   + After the installation is complete, be sure to back up your mnemonic and run the 
