@@ -14,7 +14,7 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
 
 # Node-helper options
 
-## 1. Install node - Install the Celestia `light` node.
+### 1. Install node - Install the Celestia `light` node.
   + After the installation is complete, be sure to back up your mnemonic and run the 
   + `sudo systemctl enable celestia-lightd`
   + `sudo systemctl start celestia-lightd`
