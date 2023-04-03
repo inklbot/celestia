@@ -1,3 +1,8 @@
+This Github repository is a Celestia ITN Bonus Tasks submission
+<br/>
+Copying and using this repository may result in penalties from Celestia ITN, and you are solely responsible for those penalties.
+<br/>
+
 # Overview
 `celestia.sh` is the celestia light node installation script.
 <br/>
