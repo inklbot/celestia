@@ -25,12 +25,17 @@ case $choice in
     LATEST_RELEASE=$(curl -s https://api.github.com/repos/celestiaorg/celestia-node/releases/latest | jq -r '.tag_name')
     echo "The latest Celestia Node release is: $LATEST_RELEASE"
     
+    echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
+    source $HOME/.bash_profile
     systemctl stop celestia-lightd
     cd celestia-node
     git fetch
     git checkout $LATEST_RELEASE
     make build
     sudo make install
+    rm -r ~/.celestia-light-blockspacerace-0/data
+    rm ~/.celestia-light-blockspacerace-0/config.toml    
+    celestia light init --p2p.network blockspacerace
     systemctl restart celestia-lightd
     echo ""
     echo "Node upgraded."
