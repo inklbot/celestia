@@ -28,7 +28,7 @@ case $choice in
     echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
     source $HOME/.bash_profile
     systemctl stop celestia-lightd
-    cd celestia-node
+    ~/cd celestia-node
     git fetch
     git checkout $LATEST_RELEASE
     make build
