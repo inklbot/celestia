@@ -2,9 +2,9 @@
 
 echo ""
 echo "Welcome to Celestia light node helper"
-echo "1. Install node | 4. Check node ID"
-echo "2. Upgrade node | 5. Run PayForBlob transactions"
-echo "3. Remove  node | 6. Returns the header"
+echo "1. Install node         | 4. Check node ID"
+echo "2. Upgrade node(v0.9.1) | 5. Run PayForBlob transactions"
+echo "3. Remove  node         | 6. Returns the header"
 echo ""
 
 read -p "Select an option 1~5: " choice
@@ -22,6 +22,14 @@ case $choice in
     ;;
   2)
     echo "Upgrading node..."
+    
+    ver="1.20" 
+    cd $HOME 
+    wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" 
+    sudo rm -rf /usr/local/go 
+    sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz" 
+    rm "go$ver.linux-amd64.tar.gz"
+    
     LATEST_RELEASE=$(curl -s https://api.github.com/repos/celestiaorg/celestia-node/releases/latest | jq -r '.tag_name')
     echo "The latest Celestia Node release is: $LATEST_RELEASE"
     
@@ -33,9 +41,8 @@ case $choice in
     git checkout $LATEST_RELEASE
     make build
     sudo make install
-    rm -r ~/.celestia-light-blockspacerace-0/data
-    rm ~/.celestia-light-blockspacerace-0/config.toml    
-    celestia light init --p2p.network blockspacerace
+    sudo systemctl stop celestia-lightd
+    celestia light config-update --p2p.network blockspacerace
     systemctl restart celestia-lightd
     echo ""
     echo "Node upgraded."
