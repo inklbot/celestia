@@ -5,6 +5,7 @@ echo "Welcome to Celestia light node helper"
 echo "1. Install node         | 4. Check node ID"
 echo "2. Upgrade node(v0.9.1) | 5. Run PayForBlob transactions"
 echo "3. Remove  node         | 6. Returns the header"
+echo "                        | 7. Create new wallet"
 echo ""
 
 read -p "Select an option 1~5: " choice
@@ -88,6 +89,10 @@ case $choice in
     read -p "Enter the block height: " height
     curl -X GET "http://localhost:26659/header/$height" | jq .
     ;;
+  7)
+    echo "Enter wallet name:"
+    read new_wallet_name
+    ./cel-key add $new_wallet_name --keyring-backend test --node.type light --p2p.network blockspacerace
   *)
     echo "Invalid option. Please select 1~6."
     ;;
