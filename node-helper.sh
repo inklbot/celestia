@@ -8,7 +8,7 @@ echo "3. Remove  node         | 6. Returns the header"
 echo "                        | 7. Create new wallet"
 echo ""
 
-read -p "Select an option 1~5: " choice
+read -p "Select an option 1~7: " choice
 
 case $choice in
   1)
@@ -93,7 +93,8 @@ case $choice in
     echo "Enter wallet name:"
     read new_wallet_name
     ./cel-key add $new_wallet_name --keyring-backend test --node.type light --p2p.network blockspacerace
+    ;;
   *)
-    echo "Invalid option. Please select 1~6."
+    echo "Invalid option. Please select 1~7."
     ;;
 esac
