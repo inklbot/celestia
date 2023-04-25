@@ -13,7 +13,7 @@ So copying and submitting assignments is not a good idea and should only be used
 # Usage
 
 ```
-rm node-helper.sh
+cd $HOME && rm node-helper.sh
 wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && sed -i 's/\r//' node-helper.sh && chmod +x node-helper.sh && sudo /bin/bash node-helper.sh
 ```
 
