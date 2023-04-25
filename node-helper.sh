@@ -90,6 +90,7 @@ case $choice in
     curl -X GET "http://localhost:26659/header/$height" | jq .
     ;;
   7)
+    cd ~/celestia-node
     echo "Enter wallet name:"
     read new_wallet_name
     ./cel-key add $new_wallet_name --keyring-backend test --node.type light --p2p.network blockspacerace
