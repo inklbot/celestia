@@ -48,4 +48,5 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
 
 ![image](https://user-images.githubusercontent.com/31788091/234326745-cf272eff-8798-4970-8b3c-bf247d033c71.png)
 
-<span style="color:yellow"> Do not use the wallet address and mnemonic in the screenshot above, That is just an example. <
+<span style="color:red">Do not use the wallet address and mnemonic in the screenshot above, That is just an example.</span>
+
