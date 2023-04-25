@@ -44,7 +44,7 @@ wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && s
   + Fetch the header at the desired height.
 
 ### 7. Create new wallet
-  + Create a wallet for receiving Phase 4 tasks and ITN rewards.
+  + Create a wallet for ITN Phase 4 tasks and rewards.
 
 ![image](https://user-images.githubusercontent.com/31788091/234326745-cf272eff-8798-4970-8b3c-bf247d033c71.png)
 
