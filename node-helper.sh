@@ -24,7 +24,7 @@ case $choice in
   2)
     echo "Upgrading node..."
     
-    ver="1.20" 
+    ver="1.20.3" 
     cd $HOME 
     wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" 
     sudo rm -rf /usr/local/go 
