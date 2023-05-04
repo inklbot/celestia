@@ -50,6 +50,11 @@ case $choice in
     echo "Node logs: journalctl -u celestia-lightd -f"
     ;;
   3)
+    read -p "Do you want to remove Celestia node? (yes/no): " confirm
+    if [[ $confirm != "yes" ]]; then
+        echo "Remove Celestia node has been cancelled"
+        exit 0
+    fi    
     echo "Removing node..."
     cd $HOME
     sudo systemctl stop celestia-lightd
@@ -58,6 +63,7 @@ case $choice in
     sudo systemctl daemon-reload
     rm -rf $HOME/celestia-node
     rm -rf $HOME/.celestia-light-blockspacerace-0
+    echo "Celestia node has been removed"
     ;;
   4)
     echo "Check node ID..."
