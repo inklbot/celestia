@@ -37,7 +37,7 @@ case $choice in
     echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
     source $HOME/.bash_profile
     cd ~/celestia-node
-    git fetch
+    git fetch --tags
     git checkout $LATEST_RELEASE
     make build
     sudo make install
