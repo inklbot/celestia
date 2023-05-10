@@ -30,6 +30,7 @@ celestia_node_install () {
     rm -rf celestia-node 
     git clone https://github.com/celestiaorg/celestia-node.git 
     cd celestia-node/ 
+    git fetch --tags
     git checkout $LATEST_RELEASE
     make build 
     make install 
