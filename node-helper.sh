@@ -3,7 +3,7 @@
 echo ""
 echo "Welcome to Celestia light node helper"
 echo "1. Install node         | 4. Check node ID"
-echo "2. Upgrade node(v0.9.3) | 5. Run PayForBlob transactions"
+echo "2. Upgrade node(v0.9.4) | 5. Run PayForBlob transactions"
 echo "3. Remove  node         | 6. Returns the header"
 echo "                        | 7. Create new wallet"
 echo ""
