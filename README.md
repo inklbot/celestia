@@ -17,7 +17,7 @@ cd $HOME && rm node-helper.sh
 wget https://raw.githubusercontent.com/inklbot/celestia/main/node-helper.sh && sed -i 's/\r//' node-helper.sh && chmod +x node-helper.sh && sudo /bin/bash node-helper.sh
 ```
 
-![image](https://user-images.githubusercontent.com/31788091/234328187-0f0ac1d4-6881-41f9-b226-e024e6bfde81.png)
+![image](https://github.com/inklbot/celestia/assets/31788091/33a8c72b-0df5-496f-86ee-0af56a2281ef)
 
 # Node-helper options
 
