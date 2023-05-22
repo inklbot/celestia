@@ -3,7 +3,7 @@
 echo ""
 echo "Welcome to Celestia light node helper"
 echo "1. Install node         | 4. Check node ID"
-echo "2. Upgrade node(v0.9.5) | 5. Run PayForBlob transactions"
+echo "2. Upgrade node(v0.10.0) | 5. Run PayForBlob transactions"
 echo "3. Remove  node         | 6. Returns the header"
 echo "                        | 7. Create new wallet"
 echo ""
@@ -41,8 +41,8 @@ case $choice in
     git checkout $LATEST_RELEASE
     make build
     sudo make install
-    sudo systemctl stop celestia-lightd
-    celestia light config-update --p2p.network blockspacerace
+    #sudo systemctl stop celestia-lightd
+    #celestia light config-update --p2p.network blockspacerace
     systemctl restart celestia-lightd
     echo ""
     echo "Node upgraded."
