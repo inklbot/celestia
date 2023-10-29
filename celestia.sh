@@ -55,7 +55,7 @@ After=network-online.target
  
 [Service]
 User=root
-ExecStart=/usr/local/bin/celestia light start --core.ip https://rpc-celestia.pops.one/ --core.rpc.port 26657 --core.grpc.port 9090 --keyring.accname my_celes_key --metrics.tls=false --metrics --metrics.endpoint otel.celestia.tools:4318 --gateway --gateway.addr localhost --gateway.port 26659 --p2p.network celestia
+ExecStart=/usr/local/bin/celestia light start --core.ip https://rpc-celestia.theamsolutions.info --p2p.network celestia
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=4096
